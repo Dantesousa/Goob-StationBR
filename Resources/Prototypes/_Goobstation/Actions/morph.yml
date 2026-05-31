@@ -7,7 +7,7 @@
   - type: Action
     icon:
       sprite: _Goobstation/Mobs/morph.rsi
-      state: morph
+      state: morph_dead
   - type: InstantAction
     event: !type:MorphReplicateActionEvent
 
@@ -29,7 +29,6 @@
       components:
       - Anchorable
       - Item
-    interactOnMiss: false
     event: !type:MorphActionEvent
 
 - type: entity
@@ -41,7 +40,7 @@
   - type: Action
     icon:
       sprite: Objects/Devices/chameleon_projector.rsi
-      state: morph
+      state: icon
   - type: InstantAction
     event: !type:UnMorphActionEvent
 
@@ -52,8 +51,8 @@
   description: Attempt to eat an item or creature, increasing your biomass.
   components:
   - type: Action
-    icon: { sprite : Interface/Actions/devour.rsi, state: morph }
-    iconOn: { sprite : Interface/Actions/devour.rsi, state: morph-on }
+    icon: { sprite : Interface/Actions/devour.rsi, state: icon }
+    iconOn: { sprite : Interface/Actions/devour.rsi, state: icon-on }
     itemIconStyle: BigAction
     priority: 1
   - type: TargetAction
