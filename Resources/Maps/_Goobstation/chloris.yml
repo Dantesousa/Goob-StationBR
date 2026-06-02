@@ -4,8 +4,8 @@ meta:
   engineVersion: 266.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/27/2026 05:07:48
-  entityCount: 47815
+  time: 06/02/2026 14:19:08
+  entityCount: 47817
 maps:
 - 1
 grids:
@@ -264299,6 +264299,18 @@ entities:
     components:
     - type: Transform
       pos: 63.5,106.5
+      parent: 2
+- proto: SpawnPointRoboticist
+  entities:
+  - uid: 30713
+    components:
+    - type: Transform
+      pos: 58.5,75.5
+      parent: 2
+  - uid: 30714
+    components:
+    - type: Transform
+      pos: 59.5,75.5
       parent: 2
 - proto: SpawnPointSalvageSpecialist
   entities:
