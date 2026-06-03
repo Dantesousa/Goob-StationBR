@@ -98,18 +98,7 @@ public static class JobRequirements
         IPrototypeManager protoManager,
         HumanoidCharacterProfile? profile)
     {
-        var sys = entManager.System<SharedRoleSystem>();
-        var requirements = sys.GetJobRequirement(job);
         reason = null;
-        if (requirements == null)
-            return true;
-
-        foreach (var requirement in requirements)
-        {
-            if (!requirement.Check(entManager, protoManager, profile, playTimes, out reason))
-                return false;
-        }
-
         return true;
     }
 }
